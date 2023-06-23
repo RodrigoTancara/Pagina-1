@@ -9,25 +9,29 @@ familia tipográfica: 'Poppins', sans-serif;
     text-decoration: none;
     list-style: none;
  }
+
  body{
     font-family:'Poppins', sans-serif ;
 
  }
  img{
-    max: width 100px;;
+   max-width: 100%;
+
  }
- container { 
+ .container { 
     max-width: 1200px;
-    margin: auto;
+    margin:  0 auto;
  }
- header{
+
+ .header{
     display: flex;
     align-items: center;
     min-height: 80vh;
     background-color: aliceblue;
-    padding: 70px;;
- }
- menu{
+    padding: 70px 0 ;
+   }
+
+ .menu{
     position: absolute;
     top: 0;
     left: 0;
@@ -35,5 +39,37 @@ familia tipográfica: 'Poppins', sans-serif;
     display: flex;
     align-items: center;
     justify-content: space-between;
-
  }
+ 
+.logo{
+   font-size: 25px;
+   color: black;
+
+}
+.menu .navbar ul li a{
+   font-size: 18px;
+   padding: 20px;
+   color: magenta;
+   display: block;
+
+} 
+#menu{
+   display: none;
+
+}
+.menu-icono {
+   width: 25px;
+}
+
+.menu-label {
+   cursor: pointer;
+   display: none;
+}
+
+.submenu{
+   position: relative;
+}
+
+.submenu #carrito {
+   display: flex;
+}
